@@ -208,10 +208,17 @@ is not set for the given SLOT."
     (eval `(oset pkg ,slot value))))
 
 (defvar configuration-layer--elpa-archives
-  '(("melpa" . "melpa.org/packages/")
-    ("org"   . "orgmode.org/elpa/")
-    ("gnu"   . "elpa.gnu.org/packages/"))
+  '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+      ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+      ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
   "List of ELPA archives required by Spacemacs.")
+
+;;
+;(defvar configuration-layer--elpa-archives
+;  '(("melpa" . "http://melpa.org/packages/")
+;    ("org"   . "http://orgmode.org/elpa/")
+;    ("gnu"   . "http://elpa.gnu.org/packages/"))
+;  "List of ELPA archives required by Spacemacs.")
 
 (defvar configuration-layer-exclude-all-layers nil
   "If non nil then only the distribution layer is loaded.")
